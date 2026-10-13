@@ -1,0 +1,39 @@
+@media (max-width: 1000px) {
+  .hero-grid { gap:25px;grid-template-columns:1fr .9fr; }.hero h1{font-size:58px}.hero-visual{min-height:390px}
+  .home-cards-grid,.pillars-grid{grid-template-columns:repeat(2,1fr)}
+  .auth-layout{grid-template-columns:1fr 410px;gap:35px}.auth-aside h1{font-size:47px}
+  .notice-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+}
+@media (max-width: 760px) {
+  .container{width:min(100% - 34px,600px)}
+  .nav-inner{height:68px}.mobile-toggle{display:grid!important}
+  .nav-links{display:none;position:absolute;left:0;right:0;top:68px;flex-direction:column;align-items:stretch;gap:0;padding:10px 18px 18px;background:#ffffff;border-bottom:1px solid var(--line);box-shadow:0 18px 25px rgba(0,0,0,.08)}
+  .nav-links.nav-open{display:flex}.nav-links>a:not(.button),.nav-user{padding:13px 5px}.nav-links .button{margin-top:8px}.nav-user{border-top:1px solid var(--line)}
+  .hero-grid{grid-template-columns:1fr;padding-top:65px;padding-bottom:45px;gap:28px}.hero h1{font-size:clamp(48px,11vw,65px);letter-spacing:-3px}.hero-lead{font-size:14px}
+  .hero-visual{min-height:auto;margin:0}
+  .hero-bottom{font-size:8px}.section{padding:70px 0}.section-heading{align-items:flex-start;flex-direction:column;gap:18px;margin-bottom:30px}.section-heading h2{font-size:36px}.section-heading>p{max-width:500px}
+  .home-cards-grid,.pillars-grid{grid-template-columns:1fr}
+  .home-filter-row{flex-direction:column;align-items:stretch}.home-search{width:100%}
+  .cta-section{padding:65px 0}.cta-inner{align-items:flex-start;flex-direction:column;gap:30px}.cta-inner h2{font-size:42px}.cta-actions{min-width:0}
+  .footer-main{grid-template-columns:1fr 1fr;gap:35px 25px}.footer-main>div:first-child{grid-column:1/-1}.footer-bottom{gap:15px}
+  .auth-page{padding:32px 0 45px}.auth-layout{grid-template-columns:1fr;gap:25px}.auth-aside{min-height:0}.auth-aside-content{padding:28px 0 5px}.auth-emblem{width:48px;height:48px;margin-bottom:20px}.auth-aside h1{font-size:43px;margin:15px 0 10px}.auth-aside-content>p{margin-bottom:0}.auth-aside-foot{margin-top:18px}
+  .auth-card{padding:26px 23px 22px;max-width:500px;width:100%;margin-inline:auto}
+  .dashboard-page{padding:35px 0 55px}.dashboard-top{align-items:flex-start;flex-direction:column}.metric-grid{grid-template-columns:repeat(2,1fr);gap:10px}.metric-card{padding:14px;grid-template-columns:36px 1fr;column-gap:9px}.metric-icon{width:36px;height:36px}.metric-card strong{font-size:21px}
+  .dashboard-workspace,.users-panel{padding:17px}.workspace-heading h2{font-size:15px}.workspace-heading p{max-width:230px;line-height:1.5}.filter-toolbar{align-items:stretch;flex-direction:column}.category-select{align-self:flex-start}
+  .notice-grid{grid-template-columns:1fr}.notice-card>p{min-height:0}.notice-card h3{font-size:16px}
+}
+@media (max-width: 420px) {
+  .container{width:calc(100% - 28px)}.brand{font-size:16px}.brand-icon{width:35px;height:35px}
+  .hero-actions{align-items:flex-start;flex-direction:column;gap:17px}.hero-visual{min-height:335px;margin:0}.dashboard-preview{padding:18px}.preview-welcome h3{font-size:25px}
+  .floating-chip{padding:9px 11px}.floating-chip strong{font-size:9px}.floating-chip small{font-size:7px}.chip-top{right:-3px}.chip-bottom{left:-3px}
+  .hero-bottom{align-items:flex-start;gap:14px;flex-direction:column}
+  .feature-grid{grid-template-columns:1fr}.feature-card{min-height:0;padding:20px}.feature-card h3{margin-top:17px}.feature-card p{font-size:11px}
+  .footer-main{grid-template-columns:1fr;gap:27px}.footer-main>div:first-child{grid-column:auto}.footer-bottom{padding:14px 0;align-items:flex-start;flex-direction:column;justify-content:center;gap:6px}
+  .auth-card{padding:24px 17px}.form-row{flex-direction:column}.password-meter{grid-template-columns:1fr 1fr 1fr}.password-meter small{grid-column:1/-1;margin:2px 0 0}
+  .dashboard-top h1{font-size:29px}.workspace-heading{align-items:flex-start}.workspace-heading>.button{flex-shrink:0}.workspace-heading p{max-width:180px}.dashboard-workspace,.users-panel{padding:13px}
+  .metric-label{font-size:9px}.metric-card strong{font-size:19px}
+  .dialog{padding:19px}.dialog-head h2{font-size:21px}.dialog-actions .button{padding:0 13px}
+}
+@media (prefers-reduced-motion: reduce) {
+  *,*::before,*::after{scroll-behavior:auto!important;animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}

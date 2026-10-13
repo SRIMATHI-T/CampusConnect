@@ -1,0 +1,15 @@
+const router = require('express').Router();
+const controller = require('../controllers/noticeController');
+const auth = require('../middleware/authMiddleware');
+const role = require('../middleware/roleMiddleware');
+const upload = require('../middleware/uploadMiddleware');
+const validate = require('../validators/noticeValidator');
+router.get('/public', controller.publicList);
+router.get('/', auth, controller.list);
+router.get('/stats', auth, role('admin'), controller.stats);
+router.get('/:id', auth, controller.getOne);
+router.post('/', auth, role('admin'), upload.single('attachment'), validate, controller.create);
+router.put('/:id', auth, role('admin'), upload.single('attachment'), validate, controller.update);
+router.patch('/:id/archive', auth, role('admin'), controller.archive);
+router.delete('/:id', auth, role('admin'), controller.remove);
+module.exports = router;
